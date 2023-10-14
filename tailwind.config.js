@@ -1,13 +1,21 @@
 // tailwind.config.js
+const { colors } = require("./styles/variable");
+
 module.exports = {
   content: [
     // Example content paths...
     "./public/**/*.html",
-    "./src/**/*.{js,jsx,ts,tsx,vue}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+
+    
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "media", // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {colors},
   },
   variants: {
     extend: {},

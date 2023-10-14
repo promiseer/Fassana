@@ -26,7 +26,8 @@ export default function Header() {
               href="#"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
-              Why Fassana?
+              Why Fassana ?
+              
             </a>
             <a
               href="#"
@@ -47,13 +48,13 @@ export default function Header() {
               </svg>
             </a>
             <a
-              href="#"
+              href="/pricing"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
               Pricing
             </a>
             <a
-              href="/About"
+              href="/about"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
               About

@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Footer() {
   return (
     <div className="bg-[#2a2b2c] pt-4 sm:pt-10 lg:pt-12">
       <footer className="max-w-screen-2xl px-4 md:px-8 mx-auto">

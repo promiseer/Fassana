@@ -1,45 +1,38 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-export default function Login() {
+import BlankLayout from "../components/layout/blank";
+
+const Login = () => {
   return (
-    <div className="text-center shadow-2xl ">
-      <div>
-        <Link
-          href="/"
-          className="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5"
-          aria-label="logo"
-        >
-          <svg
-            width="95"
-            height="94"
-            viewBox="0 0 95 94"
-            className="w-6 h-auto text-indigo-500"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-          </svg>
-          Fassana
-        </Link>
-        <h1>Log into Fassana</h1>
-        <button>Continue with Google</button>
-        <hr></hr>
-        Or
-        <hr></hr>
-        <h2>Email address</h2>
-        <input></input>
-        <button>Continue</button>
-        <p>Don&apos;t have an account?Sign up </p>
-        <p>
-          This site is protected by reCAPTCHA and the Google Privacy Policy and
-          Terms of Service apply.
-        </p>
-        <p>
-          Asana.com Support Integrations Forum Developers & API Resources Guide
-          Templates Pricing Terms Privacy
-        </p>
-      </div>
-    </div>
+    <>
+    
+      <section class="text-gray-600 body-font">
+        
+        <div class="container px-5 py-24 mx-auto">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+
+            <h1 class="text-gray-900 font-medium title-font tracking-wider text-sm">Welcome to Fassana
+            </h1>
+
+            <p class="text-gray-500">To get started, please sign in
+            </p>
+            <button class="w-full mx-auto mt-16 mr-16  bg-red-200   text-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg">Continue with Google</button>
+          
+            <h3>Or</h3>
+            <div class="relative mb-4">
+              <div>
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <button class="w-full mx-auto mt-16 mr-16  bg-indigo-400   text-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-400 rounded text-lg">Continue</button>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
+
+Login.PageLayout = BlankLayout
+export default Login;
