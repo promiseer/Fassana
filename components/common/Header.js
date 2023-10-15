@@ -1,9 +1,12 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Header() {
   return (
     <div className="bg-white lg:pb-12">
       <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
         <header className="flex justify-between items-center py-4 md:py-8">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-2.5"
             aria-label="logo"
@@ -19,17 +22,17 @@ export default function Header() {
               <path d="M96 0V47L48 94H0V47L48 0H96Z" />
             </svg>
             Fassana
-          </a>
+          </Link>
 
           <nav className="hidden lg:flex gap-12">
-            <a
+           <Link
               href="#"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
               Why Fassana ?
               
-            </a>
-            <a
+            </Link>
+           <Link
               href="#"
               className="inline-flex items-center text-indigo-500 text-lg font-semibold gap-1"
             >
@@ -46,35 +49,35 @@ export default function Header() {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
-            <a
+            </Link>
+           <Link
               href="/pricing"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
               Pricing
-            </a>
-            <a
+            </Link>
+           <Link
               href="/about"
               className="text-gray-600 hover:text-indigo-500 active:text-indigo-700 text-lg font-semibold transition duration-100"
             >
               About
-            </a>
+            </Link>
           </nav>
 
           <div className="hidden lg:flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-2.5 -ml-8">
-            <a
+           <Link
               href="login"
               className="inline-block focus-visible:ring ring-indigo-300 text-gray-500 hover:text-indigo-500 active:text-indigo-600 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 py-3"
             >
               Sign in
-            </a>
+            </Link>
 
-            <a
+           <Link
               href="create-account"
               className="inline-block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Started
-            </a>
+            </Link>
           </div>
 
           <button
@@ -99,7 +102,7 @@ export default function Header() {
         <div className="w-full hidden lg:block bg-gray-50 border rounded-lg shadow-sm overflow-hidden">
           <div className="max-w-screen-lg flex items-center gap-8 p-8 mx-auto">
             <div className="w-2/3 grid grid-cols-2 gap-8">
-              <a href="#" className="group flex gap-4">
+             <Link href="#" className="group flex gap-4">
                 <div className="w-10 md:w-12 h-10 md:h-12 flex justify-center items-center shrink-0 bg-indigo-500 group-hover:bg-indigo-600 group-active:bg-indigo-700 text-white rounded-lg shadow-lg transition duration-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -124,9 +127,9 @@ export default function Header() {
                     placeholder text.
                   </p>
                 </div>
-              </a>
+              </Link>
 
-              <a href="#" className="group flex gap-4">
+             <Link href="#" className="group flex gap-4">
                 <div className="w-10 md:w-12 h-10 md:h-12 flex justify-center items-center shrink-0 bg-indigo-500 group-hover:bg-indigo-600 group-active:bg-indigo-700 text-white rounded-lg shadow-lg transition duration-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -151,8 +154,8 @@ export default function Header() {
                     placeholder text.
                   </p>
                 </div>
-              </a>
-              <a href="#" className="group flex gap-4">
+              </Link>
+             <Link href="#" className="group flex gap-4">
                 <div className="w-10 md:w-12 h-10 md:h-12 flex justify-center items-center shrink-0 bg-indigo-500 group-hover:bg-indigo-600 group-active:bg-indigo-700 text-white rounded-lg shadow-lg transition duration-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -177,8 +180,8 @@ export default function Header() {
                     placeholder text.
                   </p>
                 </div>
-              </a>
-              <a href="#" className="group flex gap-4">
+              </Link>
+             <Link href="#" className="group flex gap-4">
                 <div className="w-10 md:w-12 h-10 md:h-12 flex justify-center items-center shrink-0 bg-indigo-500 group-hover:bg-indigo-600 group-active:bg-indigo-700 text-white rounded-lg shadow-lg transition duration-100">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -197,12 +200,13 @@ export default function Header() {
                     placeholder text.
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="w-1/3 border rounded-lg overflow-hidden">
               <div className="h-48 bg-gray-100">
-                <img
+                <Image  width={500}
+      height={500}
                   src="https://images.unsplash.com/photo-1619118884592-11b151f1ae11?auto=format&q=75&fit=crop&w=320"
                   loading="lazy"
                   alt="Photo by Fakurian Design"
@@ -215,12 +219,12 @@ export default function Header() {
                   This is some simple filler text.
                 </p>
 
-                <a
+               <Link
                   href="#"
                   className="inline-block shrink-0 bg-white hover:bg-gray-50 active:bg-gray-100 focus-visible:ring ring-indigo-300 text-indigo-500 text-sm font-semibold border rounded-lg outline-none transition duration-100 px-3 py-1"
                 >
                   More
-                </a>
+                </Link>
               </div>
             </div>
           </div>
