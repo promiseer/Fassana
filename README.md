@@ -1,6 +1,6 @@
 # Fassana (Project Management Tool)
 
-Welcome to the A repository! This project is designed to help you manage and track your projects, tasks, and tickets efficiently, much like popular platforms such as Jira and Asana.
+Welcome to the Fassana repository! This project is designed to help you manage and track your projects, tasks, and tickets efficiently, much like popular platforms such as Jira and Asana.
 
 ## Table of Contents
 
@@ -40,19 +40,31 @@ Our system is built using modern technologies for both the frontend and backend:
 
 ## Installation
 
-To set up the Project Management Tickets System on your local environment, follow these steps:
+To set up the Project on your local environment, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/promiseer/Fassana`
-2. Navigate to the project directory: `cd project-management-tickets-system`
-3. Install dependencies for the frontend and backend: 
-   - For the frontend: `cd frontend && npm install`
-   - For the backend: `cd backend && npm install`
+1. Clone the repository: 
+```bash
+ git clone https://github.com/promiseer/Fassana
+ ```
+
+2. Navigate to the project directory: 
+```bash
+cd Fassana
+```
+3. Install dependencies : 
+```bash
+ yarn install
+```
 4. Set up your database and configure the connection in the backend.
-5. Start the frontend and backend servers:
-   - For the frontend: `cd frontend && npm run dev`
-   - For the backend: `cd backend && npm start`
+5. Start the Developement server:
+   
+ ```bash
+npm run dev
+# or
+yarn dev
+```
 
-Your Project Management Tickets System should now be up and running.
+Your Project should now be up and running on PORT 3000.
 
 ## Usage
 
@@ -74,21 +86,3 @@ This Project Management Tickets System is open-source and released under the [MI
 
 Thank you for choosing the Project Management Tickets System! We hope it proves to be a valuable tool for your project management needs. If you have any questions or feedback, please don't hesitate to get in touch with us. Happy managing!
 
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
