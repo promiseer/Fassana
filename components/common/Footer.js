@@ -6,41 +6,41 @@ export default function Footer() {
           <nav className="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6 mb-4">
             <a
               href="#"
-              className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              className="text-white hover:text-indigo-500 active:text-indigo-600 transition duration-100"
             >
               About
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              className="text-white hover:text-indigo-500 active:text-indigo-600 transition duration-100"
             >
               Investor Relations
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              className="text-white hover:text-indigo-500 active:text-indigo-600 transition duration-100"
             >
               Jobs
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              className="text-white hover:text-indigo-500 active:text-indigo-600 transition duration-100"
             >
               Press
             </a>
             <a
               href="#"
-              className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100"
+              className="text-white hover:text-indigo-500 active:text-indigo-600 transition duration-100"
             >
               Blog
             </a>
           </nav>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 text-white">
             <a
               href="#"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              className=" hover:text-gray-500 active:text-gray-600 transition duration-100"
             >
               <svg
                 className="w-5 h-5"
@@ -57,7 +57,7 @@ export default function Footer() {
             <a
               href="#"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              className=" hover:text-gray-500 active:text-gray-600 transition duration-100"
             >
               <svg
                 className="w-5 h-5"
@@ -74,7 +74,7 @@ export default function Footer() {
             <a
               href="#"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              className=" hover:text-gray-500 active:text-gray-600 transition duration-100"
             >
               <svg
                 className="w-5 h-5"
@@ -91,7 +91,7 @@ export default function Footer() {
             <a
               href="#"
               target="_blank"
-              className="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              className=" hover:text-gray-500 active:text-gray-600 transition duration-100"
             >
               <svg
                 className="w-5 h-5"
@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="text-gray-400 text-sm text-center py-8">
+        <div className="text-white text-sm text-center py-8">
           © 2021 - Fassana. All rights reserved.
         </div>
       </footer>
